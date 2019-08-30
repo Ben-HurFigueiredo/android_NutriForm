@@ -29,7 +29,7 @@ public class Principal extends AppCompatActivity {
                 Snackbar.make(view, "Botão clicado", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
                 Toast.makeText(Principal.this, "Projeto no Toast", Toast.LENGTH_SHORT).show();
-vhttps://github.com/Ben-HurFigueiredo/android_NutriForm.git
+
             }
         });
     }
