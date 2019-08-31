@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="@string/nome_projeto"
         android:textColor="@color/colorAccent"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
