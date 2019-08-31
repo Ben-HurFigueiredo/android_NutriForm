@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NutriForm</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="nome_projeto">Projeto Nutri Form</string>
+</resources>
