@@ -4,9 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
@@ -16,6 +20,7 @@ public class Login extends AppCompatActivity {
 
 
     private Button btnlogin;
+    private Button btnClear;
     private EditText editTextEmail;
     private EditText editTextPassword;
     private TextInputLayout textLayoutEmail;
@@ -32,10 +37,20 @@ public class Login extends AppCompatActivity {
         editTextEmail = findViewById(R.id.et_email);
         textLayoutEmail = findViewById(R.id.txtlayout_email);
 
+
+
         editTextPassword =   findViewById(R.id.et_password);
         textLayoutPassword = findViewById(R.id.txtlayout_password);
 
+
+        textLayoutEmail.setHelperTextEnabled(true);
+        textLayoutEmail.setHelperText("Preencha o campo");
+
         btnlogin = findViewById(R.id.id_btn_login);
+
+
+        editTextEmail.getText().toString();
+
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,8 +67,9 @@ public class Login extends AppCompatActivity {
 
         if(editTextEmail.getText().toString().isEmpty()){
 
+            textLayoutEmail.setHelperTextEnabled(false);
             textLayoutEmail.setErrorEnabled(true);
-            textLayoutEmail.setError("Preencha com seu email");
+            textLayoutEmail.setError("Erro: Campo vazio");
         }else{
             textLayoutEmail.setErrorEnabled(false);
 

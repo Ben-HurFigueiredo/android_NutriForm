@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Nutri Form</string>
     <string name="title_activity_principal">Principal</string>
-    <string name="nome_projeto">Projeto Nutri Form</string>
+    <string name="nome_projeto">Nutri Form</string>
     <string name="sua_senha">Senha</string>
     <string name="seu_email">Login</string>
     <string name="btn_login">ENTRAR</string>
