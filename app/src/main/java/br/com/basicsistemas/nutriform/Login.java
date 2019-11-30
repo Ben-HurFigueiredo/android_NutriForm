@@ -20,7 +20,6 @@ public class Login extends AppCompatActivity {
 
 
     private Button btnlogin;
-    private Button btnClear;
     private EditText editTextEmail;
     private EditText editTextPassword;
     private TextInputLayout textLayoutEmail;
