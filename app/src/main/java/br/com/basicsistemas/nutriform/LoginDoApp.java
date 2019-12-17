@@ -1,25 +1,21 @@
 package br.com.basicsistemas.nutriform;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
-import android.view.MotionEvent;
+
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
+
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
 
-public class Login extends AppCompatActivity {
+import br.com.basicsistemas.nutriform.views.Principal;
+
+public class LoginDoApp extends MenuDoApp {
 
 
-
-    private Button btnlogin;
     private EditText editTextEmail;
     private EditText editTextPassword;
     private TextInputLayout textLayoutEmail;
@@ -30,7 +26,6 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
 
 
         editTextEmail = findViewById(R.id.et_email);
@@ -45,13 +40,12 @@ public class Login extends AppCompatActivity {
         textLayoutEmail.setHelperTextEnabled(true);
         textLayoutEmail.setHelperText("Preencha o campo");
 
-        btnlogin = findViewById(R.id.id_btn_login);
-
 
         editTextEmail.getText().toString();
 
+        Button btnlogin = findViewById( R.id.id_btn_login );
 
-        btnlogin.setOnClickListener(new View.OnClickListener() {
+        btnlogin.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 validateForm(view);
@@ -87,7 +81,7 @@ public class Login extends AppCompatActivity {
         if(!(editTextEmail.getText().toString().isEmpty() || editTextPassword.getText().toString().isEmpty())){
 
 
-            Intent intent = new Intent(Login.this, Principal.class);
+            Intent intent = new Intent( LoginDoApp.this, Principal.class);
             startActivity(intent);
 
             //Snackbar.make(view, "Textos Inseridos Com Sucesso", Snackbar.LENGTH_SHORT).setAction("Action", null).show();

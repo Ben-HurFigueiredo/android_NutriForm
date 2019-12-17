@@ -5,4 +5,10 @@
     <string name="sua_senha">Senha</string>
     <string name="seu_email">Login</string>
     <string name="btn_login">ENTRAR</string>
+    <string name="nav_open">Abrir</string>
+    <string name="nav_close">Fechar</string>
+    <string name="nav_menu_principal">Principal</string>
+    <string name="nav_menu_inbox">inbox</string>
+    <string name="nav_menu_favoritos">Favoritos</string>
+    <string name="nav_menu_emails_enviados">Emails Enviados</string>
 </resources>

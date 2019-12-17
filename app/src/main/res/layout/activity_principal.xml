@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Principal">
+    tools:context=".views.Principal">
 
-    <include layout="@layout/nav_drawer"/>
+
     <include layout="@layout/toolbar"/>
 
 
@@ -31,6 +31,12 @@
 
 
 
-    <include layout="@layout/content_principal" />
+    <include layout="@layout/toolbar"/>
+
+    <include layout="@layout/content_principal"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="?attr/actionBarSize" />
+
 
 </RelativeLayout>
