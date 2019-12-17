@@ -52,7 +52,7 @@
             android:includeFontPadding="true"
             android:inputType="textPersonName"
             android:paddingHorizontal="15dp"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:drawableRight="@drawable/ic_highlight_off_black_24dp"
 
             />
