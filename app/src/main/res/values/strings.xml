@@ -11,4 +11,6 @@
     <string name="nav_menu_inbox">inbox</string>
     <string name="nav_menu_favoritos">Favoritos</string>
     <string name="nav_menu_emails_enviados">Emails Enviados</string>
+    <string name="nome_primario_toolbar">Janela Primaria</string>
+    <string name="nome_primario">Janela Primaria</string>
 </resources>

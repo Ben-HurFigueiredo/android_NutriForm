@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="@layout/activity_login"
-    tools:context=".LoginDoApp">
+    tools:context=".Login">
 
 
     <TextView

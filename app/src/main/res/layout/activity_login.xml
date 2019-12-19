@@ -6,11 +6,11 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginDoApp">
+    tools:context=".Login">
 
     <include
         android:id="@+id/include_toolbar"
-        layout="@layout/toolbar"/>
+        layout="@layout/toolbar_login"/>
 
     <include
         layout="@layout/content_login"

@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.Principal">
+    tools:context=".views.Primario">
 
 
     <include layout="@layout/toolbar"/>
+
+
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -31,12 +33,13 @@
 
 
 
-    <include layout="@layout/toolbar"/>
 
-    <include layout="@layout/content_principal"
+    <include layout="@layout/content_primario"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:layout_marginTop="?attr/actionBarSize" />
+
+
 
 
 </RelativeLayout>

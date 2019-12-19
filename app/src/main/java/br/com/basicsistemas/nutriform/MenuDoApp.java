@@ -10,15 +10,12 @@ import androidx.appcompat.widget.Toolbar;
 public class MenuDoApp extends AppCompatActivity {
 
 
-    protected Toolbar toolbar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
 
     }
 

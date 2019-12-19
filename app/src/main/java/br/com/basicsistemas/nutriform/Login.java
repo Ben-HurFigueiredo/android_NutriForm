@@ -2,18 +2,20 @@ package br.com.basicsistemas.nutriform;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-
 import android.view.View;
-
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.appcompat.widget.Toolbar;
+
 import com.google.android.material.textfield.TextInputLayout;
 
-import br.com.basicsistemas.nutriform.views.Principal;
+import br.com.basicsistemas.nutriform.views.Primario;
 
-public class LoginDoApp extends MenuDoApp {
+public class Login extends MenuDoApp {
+
+
+    private Toolbar toolbar_menu;
 
 
     private EditText editTextEmail;
@@ -26,6 +28,10 @@ public class LoginDoApp extends MenuDoApp {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+
+        toolbar_menu = findViewById(R.id.toolbar_menu);
+        setSupportActionBar(toolbar_menu);
 
 
         editTextEmail = findViewById(R.id.et_email);
@@ -81,7 +87,7 @@ public class LoginDoApp extends MenuDoApp {
         if(!(editTextEmail.getText().toString().isEmpty() || editTextPassword.getText().toString().isEmpty())){
 
 
-            Intent intent = new Intent( LoginDoApp.this, Principal.class);
+            Intent intent = new Intent( Login.this, Primario.class);
             startActivity(intent);
 
             //Snackbar.make(view, "Textos Inseridos Com Sucesso", Snackbar.LENGTH_SHORT).setAction("Action", null).show();
